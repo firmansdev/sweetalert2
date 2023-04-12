@@ -1,8 +1,11 @@
 {
   "name": "ngx-sweetalert2-repository",
-  "version": "0.0.0-unreleased-demo-project",
+  "version": "4.0.0",
   "description": "This is the package.json for ngx-sweetalert2's repository. See src/package.json for the library itself.",
-  "repository": "git@github.com:sweetalert2/ngx-sweetalert2.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sweetalert2/ngx-sweetalert2.git"
+  },
   "author": "Morgan Touverey Quilling <mtouverey@methodinthemadness.eu>",
   "license": "MIT",
   "scripts": {
@@ -54,5 +57,20 @@
     "ts-node": "^6.0.3",
     "tslint": "^5.10.0",
     "typescript": "2.7.2"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/sweetalert2/ngx-sweetalert2/issues"
+  },
+  "homepage": "https://github.com/sweetalert2/ngx-sweetalert2#readme",
+  "main": "karma.conf.js",
+  "keywords": [
+    "for",
+    "you",
+    "who",
+    "confused",
+    "because",
+    "the",
+    "packages",
+    "deprecated"
+  ]
 }
