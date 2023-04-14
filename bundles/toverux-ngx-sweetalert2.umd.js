@@ -1,6 +1,6 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('sweetalert2'), require('@angular/core'), require('@angular/common')) :
-	typeof define === 'function' && define.amd ? define('@toverux/ngx-sweetalert2', ['exports', 'sweetalert2', '@angular/core', '@angular/common'], factory) :
+	typeof define === 'function' && define.amd ? define('@firmansdev/sweetalertFirman ', ['exports', 'sweetalert2', '@angular/core', '@angular/common'], factory) :
 	(factory((global.toverux = global.toverux || {}, global.toverux['ngx-sweetalert2'] = {}),global.swal,global.ng.core,global.ng.common));
 }(this, (function (exports,swal,core,common) { 'use strict';
 

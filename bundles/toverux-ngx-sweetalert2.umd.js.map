@@ -2,13 +2,13 @@
   "version": 3,
   "file": "toverux-ngx-sweetalert2.umd.js",
   "sources": [
-    "ng://@toverux/ngx-sweetalert2/out/sweetalert2.module.ts",
-    "ng://@toverux/ngx-sweetalert2/out/swal-partial.directive.ts",
-    "ng://@toverux/ngx-sweetalert2/out/swal-partial.component.ts",
-    "ng://@toverux/ngx-sweetalert2/out/swal.directive.ts",
-    "ng://@toverux/ngx-sweetalert2/out/swal.component.ts",
-    "ng://@toverux/ngx-sweetalert2/out/di.ts",
-    "ng://@toverux/ngx-sweetalert2/out/swal-partial-targets.ts"
+    "ng://@firmansdev/sweetalertFirman /out/sweetalert2.module.ts",
+    "ng://@firmansdev/sweetalertFirman /out/swal-partial.directive.ts",
+    "ng://@firmansdev/sweetalertFirman /out/swal-partial.component.ts",
+    "ng://@firmansdev/sweetalertFirman /out/swal.directive.ts",
+    "ng://@firmansdev/sweetalertFirman /out/swal.component.ts",
+    "ng://@firmansdev/sweetalertFirman /out/di.ts",
+    "ng://@firmansdev/sweetalertFirman /out/swal-partial-targets.ts"
   ],
   "sourcesContent": [
     "import { CommonModule } from '@angular/common';\nimport { ModuleWithProviders, NgModule } from '@angular/core';\nimport { SweetAlertOptions } from 'sweetalert2';\nimport { swalDefaultsProvider } from './di';\nimport { SwalPartialTargets } from './swal-partial-targets';\nimport { SwalPartialComponent } from './swal-partial.component';\nimport { SwalPartialDirective } from './swal-partial.directive';\nimport { SwalComponent } from './swal.component';\nimport { SwalDirective } from './swal.directive';\n\n@NgModule({\n    declarations: [\n        SwalComponent, SwalPartialDirective, SwalPartialComponent,\n        SwalDirective\n    ],\n    providers: [\n        SwalPartialTargets\n    ],\n    imports: [\n        CommonModule\n    ],\n    exports: [\n        SwalComponent, SwalPartialDirective,\n        SwalDirective\n    ],\n    entryComponents: [\n        SwalComponent, SwalPartialComponent\n    ]\n})\nexport class SweetAlert2Module {\n    public static forRoot(defaultSwalOptions?: SweetAlertOptions): ModuleWithProviders {\n        return {\n            ngModule: SweetAlert2Module,\n            providers: [swalDefaultsProvider(defaultSwalOptions)]\n        };\n    }\n}\n",
